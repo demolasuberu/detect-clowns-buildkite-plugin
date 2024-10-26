@@ -4,13 +4,11 @@ steps:
       - plugin-tester#v2.0.0: ~
 
   - label: ":sparkles: lint"
-    command: "echo 'Linting step finished.'"
     plugins:
       - plugin-linter#v3.3.0:
           id: detect-clowns
 
   - label: ":shell: Shellcheck"
-    command: "echo 'shellcheck step finished.'"
     plugins:
       - shellcheck#v1.4.0:
           files: hooks/**
