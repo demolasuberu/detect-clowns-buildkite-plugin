@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+echo "--- Debug: Checking BUILDKITE_BUILD_CHECKOUT_PATH"
+echo "BUILDKITE_BUILD_CHECKOUT_PATH is set to: $BUILDKITE_BUILD_CHECKOUT_PATH"
+
 echo "--- Searching for Clowns 🤡"
 echo "$BUILDKITE_BUILD_CHECKOUT_PATH"
 
