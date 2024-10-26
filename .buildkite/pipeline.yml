@@ -4,11 +4,13 @@ steps:
       - plugin-tester#v1.1.1: ~
 
   - label: ":sparkles: lint"
+    command: "bk run plugin-linter"
     plugins:
       - plugin-linter#v3.3.0:
           id: detect-clowns
 
   - label: ":shell: Shellcheck"
+    command: "bk run shellcheck
     plugins:
       - shellcheck#v1.4.0:
           files: hooks/**
