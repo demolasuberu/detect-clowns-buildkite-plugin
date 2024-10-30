@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 set -euo pipefail
 
 echo "--- Debug: Checking BUILDKITE_BUILD_CHECKOUT_PATH"
